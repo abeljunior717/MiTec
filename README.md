@@ -1,6 +1,7 @@
 # MiTec
 Desarrollo de pagina web informativa sobre ITSZN
 Estructura del repositorio
+
                           |---Filosofio
           |---Conocenos---|---Directorio
 Principal-|                      |---Carrera
