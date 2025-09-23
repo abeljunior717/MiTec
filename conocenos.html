@@ -3,40 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filosofia</title>
-    <!-- Enlace a tu hoja de estilos -->
+    <title>Filosofía - ITSZN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-graduation-cap logo-icon"></i>
+                <h1>ITSZN Prime</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Principal.html">Inicio</a></li>
+                    <li><a href="directorio.html">Directorio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <!-- Imagen al inicio -->
-    <img src="d:\9no semestre\MITec\MiTec\imagenes\mural.png" alt="Filosofia del Instituto" style="width:100%; height:auto;">
+    <!-- Contenido principal -->
+    <main class="container main-content">
+        <!-- Imagen -->
+        <div class="imagen-principal">
+            <img src="imagenes/mural.png" alt="Filosofía del Instituto">
+        </div>
 
-    <!-- Texto debajo de la imagen -->
-    <p>
-        Misión
-Ofrecer educación científica y tecnológica de calidad, para la formación integral de profesionistas con perspectiva global, basada en principios de inclusión, sustentabilidad, innovación y emprendimiento.
-    </p>
-    <p>
-Visión
-Ser una institución educativa orientada hacia planos de excelencia con programas académicos acreditados internacionalmente que fortalezcan la investigación y vinculación con su entorno.
-    </p>
-    <p>
-Nuestros Valores
-Una vez que se han planteado tanto la Misión como la Visión, es necesario desagregar de ellas los principios o valores de nuestro Tecnológico. Se reconoce que, como toda Institución social, el tecnológico está constituido no sólo por su infraestructura material, sino que en su interior, se generan múltiples relaciones entre las personas que en ella se desarrollan y conviven. En este proceso de interrelaciones se comparten valores comunes, entre los que se destacan los siguientes:
-    </p>
-    <p>
-RESPETO: Es la actitud de tolerancia y aceptación de los demás, en un clima de libertad de acción que permita construir relaciones armoniosas.
-        </p>
-    <p>
-FRATERNIDAD: Es el espíritu de solidaridad que nos integra para el logro de objetivos comunes que permiten el desarrollo individual y colectivo.
-    </p>
-DISCIPLINA: Es la libre aceptación de normas que garantizan el orden y la armonía, para el logro de objetivos y metas personales y organizacionales.
-    <p>
-CALIDAD ACADÉMICA: Proceso de mejora continua en los servicios educativos, tendiente a desarrollar las capacidades y potencialidades del individuo en búsqueda de la EXCELENCIA.
-    </p>
-ESPÍRITU DE SERVICIO: Es la disposición permanente y positiva para realizar esfuerzos extraordinarios con el fin de proporcionar algo útil y benéfico.
-    </p>
+        <!-- Secciones -->
+        <section id="mision">
+            <h2 class="main-title">Misión</h2>
+            <p class="main-description">
+                Ofrecer educación científica y tecnológica de calidad, para la formación integral de profesionistas con perspectiva global, basada en principios de inclusión, sustentabilidad, innovación y emprendimiento.
+            </p>
+        </section>
 
+        <section id="vision">
+            <h2 class="main-title">Visión</h2>
+            <p class="main-description">
+                Ser una institución educativa orientada hacia planos de excelencia con programas académicos acreditados internacionalmente que fortalezcan la investigación y vinculación con su entorno.
+            </p>
+        </section>
+
+        <section id="valores">
+            <h2 class="main-title">Nuestros Valores</h2>
+            <p>
+                Una vez que se han planteado tanto la Misión como la Visión, es necesario desagregar de ellas los principios o valores de nuestro Tecnológico. Se reconoce que, como toda Institución social, el tecnológico está constituido no sólo por su infraestructura material, sino que en su interior se generan múltiples relaciones entre las personas que en ella se desarrollan y conviven. En este proceso de interrelaciones se comparten valores comunes, entre los que se destacan los siguientes:
+            </p>
+            <ul>
+                <li><strong>RESPETO:</strong> Actitud de tolerancia y aceptación de los demás, en un clima de libertad de acción que permita construir relaciones armoniosas.</li>
+                <li><strong>FRATERNIDAD:</strong> Espíritu de solidaridad que nos integra para el logro de objetivos comunes que permiten el desarrollo individual y colectivo.</li>
+                <li><strong>DISCIPLINA:</strong> Libre aceptación de normas que garantizan el orden y la armonía, para el logro de objetivos y metas personales y organizacionales.</li>
+                <li><strong>CALIDAD ACADÉMICA:</strong> Proceso de mejora continua en los servicios educativos, tendiente a desarrollar las capacidades y potencialidades del individuo en búsqueda de la EXCELENCIA.</li>
+                <li><strong>ESPÍRITU DE SERVICIO:</strong> Disposición permanente y positiva para realizar esfuerzos extraordinarios con el fin de proporcionar algo útil y benéfico.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>Instituto Tecnológico Superior Zacatecas Norte © 2025</p>
+            <p>Carretera a la Compañía S/N.</p>
+        </div>
+    </footer>
 </body>
 </html>
