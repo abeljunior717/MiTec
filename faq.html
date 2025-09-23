@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buzón de Quejas y Sugerencias — TecNM Campus Zacatecas Norte</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .form-container {
+      max-width: 700px;
+      margin: 2rem auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      padding: 2rem;
+      text-align: left;
+    }
+    .form-group { margin-bottom: 1.25rem; }
+    .form-group label { display:block;font-weight:600;margin-bottom:.5rem;color:#0b3954 }
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group select,
+    .form-group textarea {
+      width: 100%; padding: .75rem; border:1px solid #ccc; border-radius:8px; font-size:1rem; transition:border .3s;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color:#1a6a9e; outline:none }
+    .form-actions { display:flex; justify-content:flex-end; }
+    .btn-primary { background:#1a6a9e;color:white;padding:.75rem 1.5rem;border:none;border-radius:8px;font-weight:600;cursor:pointer }
+    .btn-primary:hover { background:#0b3954 }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <i class="fa-solid fa-envelope-open logo-icon"></i>
+        <h1>TecNM — Buzón</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="Principal.html">Principal</a></li>
+          <li><a href="oferta_educativa.html">Oferta educativa</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="bolsa-trabajo.html" class="active">Buzón</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content container">
+    <div class="form-container">
+      <h2 class="main-title">Quejas y Sugerencias</h2>
+
+      <form action="procesar_buzon.php" method="POST">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono">
+        </div>
+
+        <div class="form-group">
+          <label for="no_control">No. de Control</label>
+          <input type="text" id="no_control" name="no_control">
+        </div>
+
+        <div class="form-group">
+          <label for="carrera">Carrera</label>
+          <select id="carrera" name="carrera" required>
+            <option value="">Selecciona tu carrera</option>
+            <option>ING. EN SISTEMAS COMPUTACIONALES</option>
+            <option>CONTADURÍA PÚBLICA</option>
+            <option>ING. EN INDUSTRIAS ALIMENTARIAS</option>
+            <option>ING. EN ADMINISTRACIÓN</option>
+            <option>ING. EN GESTIÓN EMPRESARIAL</option>
+            <option>ING. EN ELECTROMECÁNICA</option>
+            <option>ING. EN INFORMÁTICA</option>
+            <option>ING. TECNOL. DE LA INFORMACIÓN Y COMUNICACIÓN</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="semestre">Semestre</label>
+          <select id="semestre" name="semestre" required>
+            <option value="">Selecciona semestre</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option>
+            <option>5</option><option>6</option><option>7</option><option>8</option>
+            <option>9</option><option>10</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="grupo">Grupo</label>
+          <select id="grupo" name="grupo" required>
+            <option value="">Selecciona grupo</option>
+            <option>A</option><option>B</option><option>C</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="modalidad">Modalidad</label>
+          <select id="modalidad" name="modalidad" required>
+            <option value="">Selecciona modalidad</option>
+            <option>Escolarizado</option>
+            <option>Semi‑Escolarizado</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="aula">Aula</label>
+          <input type="text" id="aula" name="aula">
+        </div>
+
+        <div class="form-group">
+          <label>Tipo de Queja y/o Sugerencia</label>
+          <input type="checkbox" id="infraestructura" name="tipo[]" value="Infraestructura"> <label for="infraestructura">Infraestructura</label><br>
+          <input type="checkbox" id="visitas" name="tipo[]" value="Visitas a Empresas"> <label for="visitas">Visitas a Empresas</label><br>
+          <input type="checkbox" id="talleres" name="tipo[]" value="Talleres y Laboratorios"> <label for="talleres">Talleres y Laboratorios</label><br>
+          <input type="checkbox" id="becas" name="tipo[]" value="Becas"> <label for="becas">Becas</label><br>
+          <input type="checkbox" id="derechos" name="tipo[]" value="Derechos y Obligaciones"> <label for="derechos">Derechos y Obligaciones</label><br>
+          <input type="checkbox" id="residencia" name="tipo[]" value="Residencia Profesional"> <label for="residencia">Residencia Profesional</label>
+        </div>
+
+        <div class="form-group">
+          <label for="queja">Queja</label>
+          <textarea id="queja" name="queja" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="sugerencia">Sugerencia</label>
+          <textarea id="sugerencia" name="sugerencia" rows="3"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TecNM Campus Zacatecas Norte. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
