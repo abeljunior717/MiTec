@@ -206,3 +206,22 @@ footer {
         padding: 1.5rem;
     }
 }
+/* Estilos adicionales para la imagen */
+        .main-image {
+            text-align: center;
+            margin: 40px 0;
+            padding: 20px;
+        }
+        
+        .main-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .image-caption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #666;
+        }
