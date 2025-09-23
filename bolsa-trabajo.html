@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bolsa de Trabajo — TecNM Campus Zacatecas Norte</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .jobs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .job-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+    .job-card:hover { transform: translateY(-6px); }
+    .job-meta { display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px }
+    .job-title { font-size:1.1rem;font-weight:700;color:#0b3954 }
+    .job-company { font-weight:700;color:#1a6a9e }
+    .job-info p{ margin:0.45rem 0;color:#444 }
+    .job-actions{ margin-top:12px; display:flex; gap:8px }
+    .btn { padding:0.55rem 0.9rem; border-radius:8px; font-weight:700; text-decoration:none; text-align:center }
+    .btn-primary { background:#1a6a9e;color:white }
+    .btn-ghost { background:transparent;border:1px solid rgba(26,106,158,0.12); color:#1a6a9e }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <i class="fa-solid fa-briefcase logo-icon"></i>
+        <h1>TecNM — Bolsa de Trabajo</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="principal.html">Principal</a></li>
+          <li><a href="oferta.html">Oferta educativa</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="bolsa-trabajo.html" class="active">Bolsa de Trabajo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content container">
+    <h2 class="main-title">Bolsa de Trabajo</h2>
+    <p class="main-description">Vacantes publicadas por empresas y organizaciones. Información tomada de la publicación oficial del Tecnológico.</p>
+
+    <div class="jobs-grid">
+      <!-- 1 -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">Coca Cola CEDIS Fresnillo</div></div>
+        <div class="job-title">INSTRUCTOR DE MANEJO</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Sexo masculino. Licenciatura terminada. Edad promedio 22-35 años. Disponibilidad de tiempo. Conocimientos en Reglamentos de Vialidad Local, Estatal y/o Federal. Conducción de vehículo dual (licencia de conducir).</p>
+          <p><strong>Competencias:</strong> Trabajo en equipo, liderazgo, facilidad de palabra, manejo de Office, SAP, control administrativo, seguridad y prevención de accidentes.</p>
+          <p><strong>Informes:</strong> Tel: 4939839400 · enviar CV a anakaren.silva@arcacontal.com</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="tel:4939839400">Llamar</a><a class="btn btn-ghost" href="mailto:anakaren.silva@arcacontal.com">Enviar CV</a></div>
+      </article>
+
+      <!-- 2 -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">Soriana — Sucursal Río Grande, Zac.</div></div>
+        <div class="job-title">Líder de Gestión de Recursos Humanos</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Perfil en administración o contabilidad. Conocimientos administrativos. Edad 23-40 años. Titulado. Sexo indistinto. Presentar solicitud elaborada y curriculum vitae.</p>
+          <p><strong>Competencias:</strong> (no especificadas)</p>
+          <p><strong>Informes:</strong> Presentarse en instalaciones de Soriana Río Grande en horario de 8:00–13:00 o 16:00–18:00 hrs.</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="#">Detalles</a></div>
+      </article>
+
+      <!-- 3 -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">Coca Cola — CEDIS Río Grande, Zac.</div></div>
+        <div class="job-title">Auxiliar Administrativo</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Licenciatura terminada (Administración o afín). Sexo masculino. Edad promedio 22-35 años. Disponibilidad de tiempo. Actitud positiva. Manejo de Office.</p>
+          <p><strong>Informes:</strong> Tel: 4939839400 · enviar CV a anakaren.silva@arcacontal.com</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="tel:4939839400">Llamar</a><a class="btn btn-ghost" href="mailto:anakaren.silva@arcacontal.com">Enviar CV</a></div>
+      </article>
+
+      <!-- 4 -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">Gasolinera Faja de Oro — Río Grande, Zac.</div></div>
+        <div class="job-title">Auxiliar contable</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Egresado de la carrera de Contador Público. Presentar solicitud elaborada y curriculum vitae.</p>
+          <p><strong>Informes:</strong> Presentarse en Río Grande #49 km 8, Col. Adolfo López Mateo. Tel: (498) 982 7408.</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="tel:+4989827408">Llamar</a></div>
+      </article>
+
+      <!-- 5 -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">Autosistemas de Torreón — Planta Río Grande</div></div>
+        <div class="job-title">Supervisor de producción</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Ingeniería en Administración o Ingeniería en Sistemas Computacionales.</p>
+          <p><strong>Informes:</strong> Tel: 871 730 7990 · Recursos Humanos · enviar CV a perla.zuniga@sewsus.com.mx</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="tel:8717307990">Llamar</a><a class="btn btn-ghost" href="mailto:perla.zuniga@sewsus.com.mx">Enviar CV</a></div>
+      </article>
+
+      <!-- 6 -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">Autosistemas de Torreón — Planta Río Grande</div></div>
+        <div class="job-title">Supervisor de mantenimiento</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Ingeniería Electromecánica.</p>
+          <p><strong>Informes:</strong> Tel: 871 730 7990 · Recursos Humanos · enviar CV a perla.zuniga@sewsus.com.mx</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="tel:8717307990">Llamar</a><a class="btn btn-ghost" href="mailto:perla.zuniga@sewsus.com.mx">Enviar CV</a></div>
+      </article>
+
+      <!-- 7 -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">KOMATSU</div></div>
+        <div class="job-title">Ingenieros Electromecánicos</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Presentarse para entrevista. Presentar curriculum vitae.</p>
+          <p><strong>Informes:</strong> Acudir a entrevista el 15 de marzo a las 08:00 en las instalaciones del Tecnológico.</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="#">Ir a entrevista</a></div>
+      </article>
+
+      <!-- 8 (duplicate of 5) -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">Autosistemas de Torreón — Planta Río Grande</div></div>
+        <div class="job-title">Supervisor de producción</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Ingeniería en Administración o Ingeniería en Sistemas Computacionales.</p>
+          <p><strong>Informes:</strong> Tel: 871 730 7990 · Recursos Humanos · enviar CV a perla.zuniga@sewsus.com.mx</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="tel:8717307990">Llamar</a><a class="btn btn-ghost" href="mailto:perla.zuniga@sewsus.com.mx">Enviar CV</a></div>
+      </article>
+
+      <!-- 9 (duplicate of 6) -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">Autosistemas de Torreón — Planta Río Grande</div></div>
+        <div class="job-title">Supervisor de mantenimiento</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Ingeniería Electromecánica.</p>
+          <p><strong>Informes:</strong> Tel: 871 730 7990 · Recursos Humanos · enviar CV a perla.zuniga@sewsus.com.mx</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="tel:8717307990">Llamar</a><a class="btn btn-ghost" href="mailto:perla.zuniga@sewsus.com.mx">Enviar CV</a></div>
+      </article>
+
+      <!-- 10 -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">Ford Aucaza — Zacatecas</div></div>
+        <div class="job-title">Asesor de servicio</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Ingeniería Electromecánica. Conocimientos en mecánica automotriz y refacciones. Licencia de conducir.</p>
+          <p><strong>Competencias:</strong> Experiencia en mecánica automotriz y atención a clientes.</p>
+          <p><strong>Informes:</strong> Agendar cita Tel: 492 92 33413 · enviar CV a malvarez@fordaucaza.mx</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="tel:4929233413">Llamar</a><a class="btn btn-ghost" href="mailto:malvarez@fordaucaza.mx">Enviar CV</a></div>
+      </article>
+
+      <!-- 11 -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">Productos Lácteos Pomas — Miguel Auza, Zac.</div></div>
+        <div class="job-title">Gerente de servicio</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Ingeniería en Industrias Alimentarias. Presentar solicitud de empleo.</p>
+          <p><strong>Informes:</strong> Tel: 433984300 o acudir al Campo #15 ExHacienda la Honda, Miguel Auza, Zac.</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="tel:433984300">Llamar</a></div>
+      </article>
+
+      <!-- 12 -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">Empresa Abarrotera — Río Grande, Zac.</div></div>
+        <div class="job-title">Contador Público</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Contador Público. Disponibilidad de horario. Presentarse a entrevista.</p>
+          <p><strong>Informes:</strong> Presentarse en calle Constitución #40, Col. Centro Río Grande, Zac. de 09:00 a 16:00 hrs.</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="#">Detalles</a></div>
+      </article>
+
+      <!-- 13 -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">Despacho Contable Flores y Caldera</div></div>
+        <div class="job-title">Contador Público</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Contador Público. Disponibilidad de horario. Presentarse a entrevista.</p>
+          <p><strong>Informes:</strong> Enviar CV a clientesoz@hotmail.com o presentarse en calle Luis Moya #14, Col. Centro Río Grande, Zac.</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="mailto:clientesoz@hotmail.com">Enviar CV</a></div>
+      </article>
+
+      <!-- 14 -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">CBTa No. 20 — Río Grande, Zac.</div></div>
+        <div class="job-title">(Vacante educacional) Ingeniería en Industrias Alimentarias</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Identificación oficial, CURP, cartilla de servicio militar, comprobante de domicilio, estudiante o grado de maestría, solicitud elaborada con fotografía, currículum vitae.</p>
+          <p><strong>Informes:</strong> Presentarse en instalaciones del CBTa 20 en horario de 08:00 a 15:00 hrs.</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="#">Ir</a></div>
+      </article>
+
+      <!-- 15 -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">NISSAN — Punto de venta Río Grande, Zac.</div></div>
+        <div class="job-title">Ventas (2 plazas)</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Ingeniería en Administración. Gusto por ventas. Disponibilidad de horario. Licencia de manejo. Edad 25-34 años.</p>
+          <p><strong>Informes:</strong> Enviar CV a romanmagdalenarh@gmail.com · Tel: 4939321711</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="mailto:romanmagdalenarh@gmail.com">Enviar CV</a><a class="btn btn-ghost" href="tel:4939321711">Llamar</a></div>
+      </article>
+
+      <!-- 16 -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">Autosistemas de Torreón — Planta Miguel Auza, Zac.</div></div>
+        <div class="job-title">Supervisor de Mantenimiento</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Ingeniería Electromecánica. Presentar solicitud de trabajo en Prolongación Constitución S/N, carretera Miguel Auza – Juan Aldama, Zac.</p>
+          <p><strong>Informes:</strong> Tel: 498-120-8868 · enviar CV a karla.perez@sewsus.com.mx</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="tel:+4981208868">Llamar</a><a class="btn btn-ghost" href="mailto:karla.perez@sewsus.com.mx">Enviar CV</a></div>
+      </article>
+
+      <!-- 17 -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">Microsip — Torreón</div></div>
+        <div class="job-title">Programador Jr.</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Ingeniería en Sistemas Computacionales. Buena comprensión y lectura de inglés. Edad 21-28 años.</p>
+          <p><strong>Informes:</strong> Presentar examen el 15 de marzo a las 12:00 en instalaciones del Tecnológico. Tel: 498 982 0456 · beatriz@microsip.com</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="mailto:beatriz@microsip.com">Enviar CV</a></div>
+      </article>
+
+      <!-- 18 -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">Microsip — Torreón</div></div>
+        <div class="job-title">Programador Jr. (2a publicación)</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Ingeniería en Sistemas Computacionales. Buena comprensión y lectura de inglés. Edad 21-28 años.</p>
+          <p><strong>Extras:</strong> Base de datos relacionales, SQL, modelado de datos. Deseable: Scrum, Delphi, Firebird.</p>
+          <p><strong>Informes:</strong> Examen 12 de noviembre a las 12:00. Tel: 498 982 0456 · enviar CV a beatriz@microsip.com</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="mailto:beatriz@microsip.com">Enviar CV</a></div>
+      </article>
+
+      <!-- 19 -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">Despacho contable “Aviña y Asociados”</div></div>
+        <div class="job-title">Contador Público</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Perfil: Contador Público. Con o sin experiencia. Presentar CV y solicitud de empleo.</p>
+          <p><strong>Informes:</strong> Acudir a entrevista en Carretera a Torreón km. 62, Río Grande, Zac.</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="#">Ir a entrevista</a></div>
+      </article>
+
+      <!-- 20 -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">Propecsa Productos Especializados — San Luis Potosí</div></div>
+        <div class="job-title">Supervisor de Producción</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Ingeniería en Industrias Alimentarias. Sexo indistinto. Edad: 25 años en adelante. Experiencia en industria alimentaria 6 meses–1 año. Disponibilidad para rolar turnos. Conocimientos en BPM, control de inventarios y norma FSSC 22000.</p>
+          <p><strong>Informes:</strong> Enviar CV a reclutamioento@propecsa.com.mx</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="mailto:reclutamioento@propecsa.com.mx">Enviar CV</a></div>
+      </article>
+
+      <!-- 21 -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">Agencia COCA COLA — Sucursal Río Grande</div></div>
+        <div class="job-title">Encargado Sistema Hand Held</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Sexo masculino. Licenciatura terminada (Ing. sistemas computacionales o afín). Edad promedio 22-35 años. Licencia de manejo vigente. Sueldo: $12,000.00 mensuales.</p>
+          <p><strong>Objetivos del puesto:</strong> Verificar que Hand Held, tablets y notebooks mantengan la información de preventa en sistemas Intelliroute y sistema integral; controlar registro de ventas por cliente según liquidación diaria del vendedor.</p>
+          <p><strong>Informes:</strong> Acudir a Sucursal Río Grande. Tel: (498) 98 2 00 79 · Dirección: Eva Sámano S/N Col. Centro.</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="tel:+4989820079">Llamar</a></div>
+      </article>
+
+      <!-- 22 -->
+      <article class="job-card">
+        <div class="job-meta"><div class="job-company">Auxiliar de contador</div></div>
+        <div class="job-title">Auxiliar de contador</div>
+        <div class="job-info">
+          <p><strong>Requisitos:</strong> Experiencia mínima de un año en área contable. Conocimiento de Contpaqi Contabilidad y Nóminas. Manejo de Office (Excel, Word, PowerPoint).</p>
+          <p><strong>Informes:</strong> Presentarse con solicitud elaborada y currículum en las oficinas ubicadas en carr. A Torreón km. 62 con el L.C. Edgar Aviña Aguilar o L.C. Alberto Aviña Rivas.</p>
+        </div>
+        <div class="job-actions"><a class="btn btn-primary" href="#">Detalles</a></div>
+      </article>
+
+    </div>
+
+    <p style="margin-top:1.2rem;color:#666;font-size:0.95rem">Contenido replicado de la publicación oficial de la Bolsa de Trabajo del TecNM Campus Zacatecas Norte.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TecNM Campus Zacatecas Norte. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
